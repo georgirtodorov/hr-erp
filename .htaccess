@@ -1,2 +1,2 @@
-
-AddHandler x-httpd-php80 .php
+#this line tell the server to run the at php8
+#AddHandler x-httpd-php80 .php   
