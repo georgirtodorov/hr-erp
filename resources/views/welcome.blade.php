@@ -20,6 +20,15 @@
             }
         </style>
     </head>
+    <strong>Database Connected: </strong>
+    <?php
+    try {
+        \DB::connection()->getPDO();
+        echo \DB::connection()->getDatabaseName();
+    } catch (\Exception $e) {
+        echo 'None';
+    }
+    ?>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
